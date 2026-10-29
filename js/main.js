@@ -4,7 +4,7 @@
    ========================================================= */
 const CONFIG = {
   // Token mint address from pump.fun (the long string in the coin's URL).
-  // While empty, the site shows "launching soon" and buy buttons go to pump.fun.
+  // While empty, the address box is hidden and buy buttons go to pump.fun.
   ca: "",
 
   // Full links, e.g. "https://x.com/yourhandle" and "https://t.me/yourgroup".
@@ -43,15 +43,14 @@ const CONFIG = {
   });
 
   // ---- contract address + copy ----
-  const caBox = $("[data-ca-box]");
+  const caWrap = $("[data-ca-wrap]");
   const caValue = $("[data-ca]");
   const copyBtn = $("[data-copy]");
   const copyStatus = $("[data-copy-status]");
 
-  if (ca && caBox) {
+  if (ca && caWrap) {
     caValue.textContent = ca;
-    caBox.classList.add("is-live");
-    copyBtn.hidden = false;
+    caWrap.hidden = false;
 
     let resetTimer;
     copyBtn.addEventListener("click", async () => {

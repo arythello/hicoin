@@ -51,6 +51,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+  /* no text highlighting, no grey flash when tapping on phones */
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 ::selection { background: var(--fg); color: var(--bg); }
@@ -202,19 +206,15 @@ img { display: block; max-width: 100%; }
 }
 .ca__value {
   min-width: 0;
-  font-family: var(--font);
-  font-size: 14px;
-  color: var(--dim);
-  overflow-wrap: anywhere;
-  text-align: left;
-  padding-right: 12px;
-}
-.ca.is-live .ca__value {
   font-family: var(--mono);
   font-size: 13px;
   color: var(--fg);
   letter-spacing: 0;
-  padding-right: 0;
+  overflow-wrap: anywhere;
+  text-align: left;
+  /* the one exception to no-highlighting: one tap selects the whole address */
+  -webkit-user-select: all;
+  user-select: all;
 }
 .ca__copy {
   flex: none;

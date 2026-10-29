@@ -24,9 +24,9 @@ Plain HTML, CSS and JavaScript. No build step, no dependencies.
 
    Empty links (`x`, `telegram`) are hidden, so leave one blank if you don't have it yet.
 
-2. **Fix the social preview image.** X and Telegram need a full URL for the link preview.
-   Once you know your domain, replace `assets/og.png` in the `og:image` and `twitter:image`
-   tags in `index.html` with the full URL, e.g. `https://hicoin.xyz/assets/og.png`.
+2. **Link preview.** The preview image is set to `https://hi-coin.xyz/assets/og.png`.
+   If the domain ever changes, update `og:url`, `og:image`, `twitter:image` and `canonical`
+   in `index.html` (and the `CNAME` file).
 
 ## Preview locally
 
