@@ -53,5 +53,6 @@ js/main.js            settings (CONFIG) and the small bits of interaction
 assets/logo.svg       the hi. logo as a vector, traced from the original artwork
 assets/brand/         original pfp and banner (linked from the footer for the community)
 assets/og.png         social preview image
+favicon.ico, assets/*icon*.png   favicons, made from the pfp
 assets/fonts/         DM Sans, self-hosted (SIL Open Font License, see OFL.txt)
 ```
