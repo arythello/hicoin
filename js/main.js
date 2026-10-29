@@ -5,7 +5,7 @@
 const CONFIG = {
   // Token mint address from pump.fun (the long string in the coin's URL).
   // While empty, the address box is hidden and buy buttons go to pump.fun.
-  ca: "",
+  ca: "6seKG7Trwo9nyV738v2Dz98VmaJFfPnZ4CPmdos1pump",
 
   // Full links, e.g. "https://x.com/yourhandle" and "https://t.me/yourgroup".
   x: "",
